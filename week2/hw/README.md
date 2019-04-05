@@ -16,7 +16,7 @@ Basic guidelines:
 - You should write an interface for every API's return. Remember that you can open any API in your browser. Use that to document what the types of everything should be. I strongly recommend you read up on interfaces first. Here's a good start: https://www.typescriptlang.org/docs/handbook/interfaces.html.
 - Most of the APIs here will return an array of objects which means you should be able to document an object and then say the type expected will be `ThatObject[]`.
 - Interfaces should be named with capital camel case LikeThis.
-- You should be able to reuse type declaration between excercises.
+- You should be able to reuse type declaration between exercises.
 
 Let's say that I want to get the weather from an API. This is actually a significantly harder task than it sounds because the API we'll be using doesn't offer the ability to just ask for the weather from a human readable location like "Vanderbilt University". Instead, it wants the latitude and longitude. So, we'll have to query another API to get this done. That'll be [this](https://nominatim.openstreetmap.org/?format=json&q=Nashville&format=json&limit=3) API. Notice the "q=Nashville" in the middle. That's where you put the query for what you want geocoded. You can easily use a template string for this like so:
 
